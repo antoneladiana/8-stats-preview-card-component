@@ -1,1 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-navy-950: #0a0c1c;
+  --color-blue-950: #1b1937;
+  --color-purple-500: #ab5cdb;
+  /* Typography */
+  --font-inter: "Inter", sans-serif;
+  /* Spacing */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-900: 4.5rem; /* 72px */
+  --spacing-1000: 5rem; /* 80px */
+}
+
+@utility text-preset-1 {
+  font-family: var(--font-inter);
+  font-weight: 700; /* bold */
+  font-size: 2.25rem; /* 36px */
+  line-height: 125%;
+  letter-spacing: 0rem;
+}
+
+@utility text-preset-2 {
+  font-family: var(--font-inter);
+  font-weight: 700; /* bold */
+  font-size: 1.75rem; /* 28px */
+  line-height: 125%;
+  letter-spacing: 0rem;
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-inter);
+  font-weight: 700; /* bold */
+  font-size: 1.5rem; /* 24px */
+  line-height: 120%;
+  letter-spacing: 0rem;
+}
+
+@utility text-preset-4 {
+  font-family: var(--font-inter);
+  font-weight: 400; /* regular */
+  font-size: 0.938rem; /* 15px */
+  line-height: 165%;
+  letter-spacing: 0rem;
+}
+
+@utility text-preset-5 {
+  font-family: var(--font-inter);
+  font-weight: 400; /* regular */
+  font-size: 0.75rem; /* 12px */
+  line-height: 200%;
+  letter-spacing: 0.063rem;
+}

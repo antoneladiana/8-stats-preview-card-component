@@ -12,9 +12,55 @@
     />
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
-  <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
+  <body
+    class="bg-navy-950 text-white flex justify-center items-center min-h-screen"
+  >
+    <main>
+      <article
+        class="bg-blue-950 flex flex-col justify-center items-center lg:items-stretch max-w-sm md:max-w-lg lg:max-w-5xl lg:flex-row-reverse rounded-lg overflow-hidden text-center md:text-left my-300"
+      >
+        <div class="bg-purple-500">
+          <picture>
+            <source
+              media="min-width: 1024px"
+              srcset="images/image-header-desktop.jpg"
+            />
+            <img
+              class="mix-blend-multiply w-full h-full object-cover"
+              src="images/image-header-mobile.jpg"
+              alt="Picture of a group of people on a work meeting."
+            />
+          </picture>
+        </div>
+        <div class="py-300 px-400 md:py-800 md:px-1000 flex flex-col gap-500">
+          <div class="flex flex-col gap-100">
+            <h1 class="text-preset-1">
+              Get <span class="text-purple-500">insights</span> that help your
+              business grow.
+            </h1>
+            <p class="text-preset-4">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <dl
+            class="flex flex-col gap-400 md:flex-row md:justify-between md:gap-800 uppercase"
+          >
+            <div>
+              <dd class="text-preset-3">10k+</dd>
+              <dt class="text-preset-5">companies</dt>
+            </div>
+            <div>
+              <dd class="text-preset-3">314</dd>
+              <dt class="text-preset-5">templates</dt>
+            </div>
+            <div>
+              <dd class="text-preset-3">12m+</dd>
+              <dt class="text-preset-5">queries</dt>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
